@@ -8,6 +8,7 @@ export type AdminContentCollection =
 
 export type ContentStatus = "draft" | "published" | "archived";
 export type ContentVisibility = "public" | "private" | "unlisted";
+
 export type ContentFormat =
   | "essay"
   | "reel"
@@ -19,89 +20,93 @@ export type ContentFormat =
 
 export type ContentDifficulty = "beginner" | "intermediate" | "advanced";
 
+export type ContentSource = {
+  title?: string;
+  url?: string;
+  link?: string;
+  name?: string;
+  author?: string;
+  publisher?: string;
+  publishedAt?: string;
+};
+
+export type ContentSeo = {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  canonicalUrl?: string;
+};
+
 export type ContentItem = {
   _id: string;
   title: string;
   slug: string;
+
   hook?: string;
   summary?: string;
   body?: string;
-  
+  excerpt?: string;
+  description?: string;
+
   tags?: string[];
-  status?: string;
+  status?: ContentStatus | string;
   category?: string;
   type?: string;
+
   isFeatured?: boolean;
   visibility?: ContentVisibility;
   contentFormat?: ContentFormat;
   difficulty?: ContentDifficulty;
-  createdAt?: string;
-  updatedAt?: string;
+
   coverImage?: string;
-imageUrl?: string;
-image?: string;
-thumbnail?: string;
+  imageUrl?: string;
+  image?: string;
+  thumbnail?: string;
 
-seo?: {
-  ogImage?: string;
-  title?: string;
-  description?: string;
-};
-  publishedAt?: string;
-};
-
-export type ContentType = AdminContentCollection;
-
-export interface AdminContentItem extends ContentItem {
   readingTime?: number;
   estimatedMinutes?: number;
   order?: number;
-  seo?: {
-    metaTitle?: string;
-    metaDescription?: string;
-    canonicalUrl?: string;
-    ogImage?: string;
-  };
-  sources?: {
-    title?: string;
-    url?: string;
-    author?: string;
-    publisher?: string;
-    publishedAt?: string;
-  }[];
-}
+
+  seo?: ContentSeo;
+  sources?: ContentSource[];
+
+  publishedAt?: string;
+  createdAt?: string;
+  updatedAt?: string;
+};
+
+export type Content = ContentItem;
+
+export type ContentType = AdminContentCollection;
+
+export interface AdminContentItem extends ContentItem {}
 
 export interface AdminContentPayload {
   title: string;
   slug?: string;
   type: string;
   category: string;
+
   hook?: string;
   summary?: string;
   body?: string;
   thumbnail?: string;
+
   tags?: string[];
   readingTime?: number;
   status?: ContentStatus;
   isFeatured?: boolean;
   order?: number;
+
   visibility?: ContentVisibility;
   contentFormat?: ContentFormat;
   difficulty?: ContentDifficulty;
   estimatedMinutes?: number;
-  seo?: {
-    metaTitle?: string;
-    metaDescription?: string;
-    canonicalUrl?: string;
-    ogImage?: string;
-  };
-  sources?: {
-    title?: string;
-    url?: string;
-    author?: string;
-    publisher?: string;
-    publishedAt?: string;
-  }[];
+
+  seo?: ContentSeo;
+  sources?: ContentSource[];
 }
 
 export interface AdminContentListResponse {
