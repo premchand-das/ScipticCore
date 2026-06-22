@@ -1,58 +1,102 @@
 # SkepticCore
 
-> Question Everything. Understand Reality.
+<p align="center">
+  <img src="./assets/skepticcore-banner.png" alt="SkepticCore Banner" width="100%" />
+</p>
+
+<p align="center">
+  <strong>Question Everything. Understand Reality.</strong>
+</p>
+
+<p align="center">
+  <a href="https://skepticcore.com">
+    <img src="https://img.shields.io/badge/Live%20Demo-Visit%20Site-gold?style=for-the-badge" alt="Live Demo" />
+  </a>
+  <a href="https://github.com/premchand-das/ScipticCore">
+    <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge" alt="GitHub Repository" />
+  </a>
+</p>
+
+---
+
+## 🌍 Live Demo
+
+**Website:** [https://skepticcore.com](https://scipticcore.vercel.app/)
 
 SkepticCore is a modern knowledge platform dedicated to critical thinking, scientific reasoning, philosophy, history, technology, and the exploration of ideas that shape our world.
 
+Explore the platform live and experience a new way of understanding reality through evidence, logic, and intellectual curiosity.
+
+### Preview
+
+![SkepticCore Preview](./assets/preview.png)
+
+---
+
+# About SkepticCore
+
+SkepticCore exists for one reason:
+
+**To help people think better.**
+
+In an age where information is abundant but understanding is scarce, SkepticCore aims to become a digital library for critical thinkers.
+
 Our mission is not to tell people what to think.
 
-Our mission is to teach people **how to think**.
+Our mission is to teach people **how to think.**
 
 ---
 
 ## Philosophy
 
-In an age of infinite information, the biggest problem is not access to knowledge.
+The modern world is filled with:
 
-The problem is separating:
+- Information overload
+- Misinformation
+- Echo chambers
+- Intellectual tribalism
+- Shallow content
 
-- Truth from misinformation
-- Evidence from opinion
-- Understanding from noise
+SkepticCore is built on the belief that:
 
-SkepticCore exists to help curious minds explore reality through evidence, logic, skepticism, and intellectual honesty.
+- Truth matters
+- Evidence matters
+- Curiosity matters
+- Understanding matters
 
----
-
-## What We Publish
-
-### Series
-
-Long-form investigations into major ideas, systems, and historical events.
-
-### Episodes
-
-Focused explorations of important questions and concepts.
-
-### Articles
-
-Thought-provoking essays, analyses, and commentary.
-
-### Papers
-
-Research-backed deep dives into science, technology, philosophy, economics, and society.
-
-### Archive
-
-Historical documents, references, and preserved materials.
-
-### Dogmas
-
-Widely accepted beliefs examined through a skeptical lens.
+We encourage questioning assumptions, examining evidence, and pursuing reality with intellectual honesty.
 
 ---
 
-## Core Principles
+# What We Publish
+
+##  Series
+
+Long-form investigations into major ideas, systems, historical events, and societal structures.
+
+##  Episodes
+
+Focused explorations of specific questions and concepts.
+
+##  Articles
+
+Thought-provoking essays, commentary, and analysis.
+
+##  Papers
+
+Research-backed deep dives into science, technology, economics, philosophy, psychology, and society.
+
+##  Archive
+
+Historical documents, preserved materials, and reference collections.
+
+##  Dogmas
+
+Widely accepted beliefs examined through evidence and skepticism.
+
+---
+
+# Core Principles
 
 ### Evidence First
 
@@ -64,7 +108,7 @@ Being wrong is part of learning.
 
 ### Curiosity Over Certainty
 
-Questions matter more than conclusions.
+Questions are often more valuable than conclusions.
 
 ### Open Inquiry
 
@@ -72,13 +116,47 @@ No idea is beyond examination.
 
 ### Critical Thinking
 
-Arguments are evaluated on logic and evidence, not popularity.
+Arguments are evaluated by logic and evidence—not popularity.
+
+### Lifelong Learning
+
+Understanding reality is an ongoing process.
 
 ---
 
-## Technology Stack
+# Features
 
-### Frontend
+## Public Platform
+
+- Explore articles, papers, episodes, series, archive entries, and dogmas
+- Powerful search experience
+- Category-based browsing
+- Responsive editorial design
+- SEO optimized pages
+- Dynamic metadata generation
+- Fast content discovery
+
+## Admin Platform
+
+- Secure authentication
+- Content management dashboard
+- Draft & publishing workflows
+- SEO management tools
+- Content organization system
+- Rich content editing
+
+## Search System
+
+- Global content search
+- Category filtering
+- Fast retrieval
+- Scalable architecture
+
+---
+
+# Technology Stack
+
+## Frontend
 
 - Next.js
 - TypeScript
@@ -87,14 +165,14 @@ Arguments are evaluated on logic and evidence, not popularity.
 - Zustand
 - Axios
 
-### Backend
+## Backend
 
 - Node.js
 - Express.js
 - MongoDB
 - JWT Authentication
 
-### Infrastructure
+## Infrastructure
 
 - Vercel
 - Render
@@ -102,105 +180,156 @@ Arguments are evaluated on logic and evidence, not popularity.
 
 ---
 
-## Features
-
-### Public Platform
-
-- Explore articles, papers, episodes, series, archive entries, and dogmas
-- Search across all content
-- SEO-optimized pages
-- Dynamic metadata generation
-- Responsive editorial design
-
-### Admin System
-
-- Secure authentication
-- Content management dashboard
-- Draft and publishing workflows
-- SEO management
-- Content organization
-
-### Search
-
-- Global content discovery
-- Category filtering
-- Fast retrieval
-
----
-
-## Project Structure
+# Project Structure
 
 ```bash
-SkepticCore/
+ScipticCore/
+│
+├── assets/
+│   ├── skepticcore-banner.png
+│   └── preview.png
+│
 ├── frontend/
 │   ├── app/
 │   ├── components/
 │   ├── lib/
 │   ├── store/
-│   └── types/
+│   ├── hooks/
+│   ├── types/
+│   └── public/
 │
 ├── backend/
 │   ├── controllers/
 │   ├── models/
 │   ├── routes/
 │   ├── middleware/
-│   └── validators/
+│   ├── validators/
+│   ├── services/
+│   └── utils/
 │
 └── README.md
 ```
 
 ---
 
-## Local Development
+# Local Development
 
-### Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/premchand-das/ScipticCore.git
 cd ScipticCore
 ```
 
-### Frontend
+---
+
+## Frontend Setup
 
 ```bash
 cd frontend
+
 npm install
+
 npm run dev
 ```
 
-### Backend
+Frontend runs on:
 
-```bash
-cd backend
-npm install
-npm run dev
+```txt
+http://localhost:3000
 ```
 
 ---
 
-## Environment Variables
+## Backend Setup
 
-### Frontend
+```bash
+cd backend
+
+npm install
+
+npm run dev
+```
+
+Backend runs on:
+
+```txt
+http://localhost:5000
+```
+
+---
+
+# Environment Variables
+
+## Frontend
+
+Create:
+
+```bash
+frontend/.env.local
+```
 
 ```env
 NEXT_PUBLIC_API_URL=
 NEXT_PUBLIC_SITE_URL=
 ```
 
-### Backend
+---
+
+## Backend
+
+Create:
+
+```bash
+backend/.env
+```
 
 ```env
 PORT=
 MONGO_URI=
 JWT_SECRET=
 JWT_REFRESH_SECRET=
+
 ADMIN_EMAIL=
 ADMIN_PASSWORD=
 ```
 
 ---
 
-## Vision
+# Roadmap
+
+## Phase 1 — Foundation
+
+- Content Architecture
+- Admin Dashboard
+- Publishing System
+- Search System
+- SEO Infrastructure
+
+## Phase 2 — Expansion
+
+- Advanced Discovery
+- Reading Collections
+- Recommendation Engine
+- Content Relationships
+
+## Phase 3 — Intelligence Layer
+
+- AI-Assisted Research
+- Concept Linking
+- Knowledge Mapping
+- Interactive Learning
+
+## Phase 4 — Global Knowledge Platform
+
+- Multi-language Support
+- Community Contributions
+- Public Research Initiatives
+- Open Knowledge Ecosystem
+
+---
+
+# Vision
 
 SkepticCore is building a digital library for critical thinkers.
 
@@ -208,7 +337,7 @@ A place where people can challenge assumptions, investigate ideas, and develop a
 
 Not a social network.
 
-Not a news site.
+Not a news website.
 
 Not a content farm.
 
@@ -216,47 +345,46 @@ A platform dedicated to the pursuit of truth through reason, evidence, and curio
 
 ---
 
-## Roadmap
+# Future Goals
 
-### Phase 1 — Foundation
-
-- Content architecture
-- Admin dashboard
-- Publishing system
-- Search system
-
-### Phase 2 — Expansion
-
-- Advanced content discovery
-- Reading collections
-- Recommendation engine
-- Knowledge connections
-
-### Phase 3 — Intelligence Layer
-
-- AI-assisted research
-- Concept linking
-- Interactive learning experiences
-- Knowledge graph
-
-### Phase 4 — Global Knowledge Platform
-
-- Multi-language support
-- Community contributions
-- Public research initiatives
-- Open knowledge ecosystem
+- Interactive knowledge maps
+- AI-powered research assistance
+- Visual learning systems
+- Long-form educational experiences
+- Connected concept graphs
+- Public intellectual archive
+- Open knowledge network
 
 ---
 
-## Founder
+# Founder
 
 **Premchand Das**
 
-Building tools that help people think better, learn deeper, and understand reality more clearly.
+Building products that help people think better, learn deeper, and understand reality more clearly.
+
+---
+
+# Contributing
+
+Contributions, suggestions, and discussions are welcome.
+
+If you'd like to contribute:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
 ---
 
 
 ---
 
-**Question Everything. Understand Reality.**
+<p align="center">
+  <strong>Question Everything. Understand Reality.</strong>
+</p>
+
+<p align="center">
+  Built with curiosity, skepticism, and a commitment to understanding reality.
+</p>
