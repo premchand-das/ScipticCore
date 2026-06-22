@@ -29,12 +29,28 @@ app.use((req, res, next) => {
   next();
 });
 
+import cors from "cors";
+
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://scipticcore.vercel.app",
+  "https://scipticcore.com",
+];
+
 app.use(
   cors({
-    origin: env.CLIENT_URL,
-    credentials: true
+    origin(origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+
+      return callback(new Error(`CORS blocked: ${origin}`));
+    },
+    credentials: true,
   })
 );
+
+
 
 
 app.use(helmet({
