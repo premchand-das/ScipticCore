@@ -29,8 +29,6 @@ app.use((req, res, next) => {
   next();
 });
 
-import cors from "cors";
-
 const allowedOrigins = [
   "http://localhost:3000",
   "https://scipticcore.vercel.app",
