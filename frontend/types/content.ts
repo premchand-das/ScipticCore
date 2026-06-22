@@ -26,7 +26,7 @@ export type ContentItem = {
   hook?: string;
   summary?: string;
   body?: string;
-  thumbnail?: string;
+  
   tags?: string[];
   status?: string;
   category?: string;
@@ -37,6 +37,16 @@ export type ContentItem = {
   difficulty?: ContentDifficulty;
   createdAt?: string;
   updatedAt?: string;
+  coverImage?: string;
+imageUrl?: string;
+image?: string;
+thumbnail?: string;
+
+seo?: {
+  ogImage?: string;
+  title?: string;
+  description?: string;
+};
   publishedAt?: string;
 };
 
